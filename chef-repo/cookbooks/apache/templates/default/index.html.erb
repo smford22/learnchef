@@ -1,0 +1,10 @@
+<html>
+<head>
+    <title>Chef Test</title>
+</head>
+<body>
+    <h1>Welcome to <%= node["company"] %></h1>
+    <h2>Hello from, <%= node["fqdn"] %>!</h2>
+    <p>This server has <%= node["memory"]["total"].to_i / 1024 %> MB memory, of which <%= node["memory"]["free"].to_i / 1024 %> is free</p>
+</body>
+</html>
